@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "user",
+      "password": "pass"
+    },
+    {
+      "username": "alex",
+      "password": "huss",
+      "id": 1
+    }
+    
+  ],
+  "memos": [
+    {
+      "id": 0,
+      "createdOn": "2022/08/12",
+      "text": "same but now in service memo1"
+    },
+    {
+      "id": 1,
+      "createdOn": "2022/08/12",
+      "text": "same but now in service memo2"
+    },
+    {
+      "id": 2,
+      "createdOn": "2022/08/12",
+      "text": "same but now in service memo3"
+    },
+    {
+      "id": 3,
+      "createdOn": "2022/08/12",
+      "text": "same but now in service memo4"
+    },
+    {
+      "id": 4,
+      "createdOn": "2022/08/12",
+      "text": "same but now in service memo5"
+    },
+    {
+      "userID": 1,
+      "createdOn": "2022-08-12T21:10:35.787Z",
+      "text": "My first memo",
+      "id": 5
+    },
+    {
+      "userID": 0,
+      "createdOn": "2022-08-12T21:11:18.309Z",
+      "text": "user's first memo",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<div fxLayout="row" fxLayoutGap="1rem" class="space">
+    <button mat-mini-fab color="primary" (click)="onAddMemoClicked()">
+        <mat-icon>
+            note_add
+        </mat-icon>
+    </button>
+    <div fxLayout="row wrap" fxLayoutGap="1rem grid" class="space">
+        <app-edit-memo *ngIf="addingMemo" 
+        (apply)="onCreateMemo($event)" 
+        (cancel)="onCancelCreate()">
+        </app-edit-memo>
+        <div *ngFor="let memo of memos">
+            <app-memo *ngIf="memo.id !== memoToEditID" [memo]="memo"></app-memo>
+            <app-edit-memo *ngIf="memo.id === memoToEditID" [memo]="memo" 
+            (apply)="onApplyEdit($event)" 
+            (cancel)="onCancelEdit()">
+            </app-edit-memo>
+        </div>
+    </div>
+</div>

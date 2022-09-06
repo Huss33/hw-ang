@@ -1,0 +1,23 @@
+<div class="centerhv">
+    <form (ngSubmit)="onSubmit($event)">
+        <div layout="row">
+            <mat-form-field appearance="standard">
+                <input matInput placeholder="Username" name="username" 
+                    [(ngModel)]="username">
+            </mat-form-field>
+        </div>
+        <div layout="row">
+            <mat-form-field appearance="standard">
+                <input matInput placeholder="Password" type="password" 
+                    name="password" [(ngModel)]="password">
+            </mat-form-field>
+        </div>
+        <div layout="row">
+            <button class="block" type="submit" [disabled]="pending" 
+                mat-flat-button color="primary">{{ submitText }}</button>
+        </div>
+        <div layout="row">
+            <a class="block" mat-button href="" (click)="onLink($event)">{{ linkText }}</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+<mat-card class="memo-card">
+    <mat-card-subtitle class="no-mb">{{ memo.createdOn | date: 'shortDate' }}</mat-card-subtitle>
+    <mat-card-content class="no-mb">
+        <mat-form-field class="full-width" appearance="standard">
+            <textarea matInput placeholder="Memo text" rows="1" [(ngModel)]="newText">
+              {{ memo.text }}
+            </textarea>  
+          </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions class="actions" align="end">
+      <button mat-icon-button class="icon" (click)="onApply()">
+        <mat-icon [inline]="true">
+          check
+        </mat-icon>
+      </button>
+      <button mat-icon-button class="icon" (click)="onCancel()">
+        <mat-icon [inline]="true">
+          cancel
+        </mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
